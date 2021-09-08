@@ -113,22 +113,25 @@ function removeLastFlavor(originalFlavors){
     return r;
 }
 
-console.log(removeLastFlavor(originalFlavors));
+console.log('Task 4:', removeLastFlavor(originalFlavors));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function that returns a flavor at a given index in the array.
 
 Use the getFlavorByIndex function below to do the following:
-  1. Recieve an array
+  1. Receive an array
   2. Receive a number (the desired index)
   3. Return the flavor located at the received index position
 
   For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(/*your code here*/){
-  /*your code here*/
+function getFlavorByIndex(originalFlavors, index){
+  const x = originalFlavors.indexOf(index);
+    return x;
 }
+
+console.log('Task 5:', getFlavorByIndex(originalFlavors, 2));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
