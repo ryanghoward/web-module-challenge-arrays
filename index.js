@@ -45,8 +45,9 @@ Use the copy function below to do the following:
   2. Return a copy of the received array  
 */
 
-function copy(arr){
-  return originalFlavors;
+function copy(array){
+  let variable = array.slice();
+  return array;
 }    
 
 console.log('Task 1:', copy(originalFlavors));
@@ -87,15 +88,13 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(originalFlavors){
-  addFlavor(originalFlavors.unshift('Rainbow Sherbert'));
-    return originalFlavors;
+function addFlavor(originalFlavors, newflavor){
+  originalFlavors.unshift(newflavor);
+    return originalFlavors
 }
 
-console.log(originalFlavors.unshift('Rainbow Sherbert'));
+ console.log('Task 3:', addFlavor(originalFlavors, 'Rainbow Sherbert'));
 
-console.log('Task 3:', originalFlavors);
- 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
