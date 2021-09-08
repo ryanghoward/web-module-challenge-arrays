@@ -64,8 +64,12 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(arr){
- console.log(originalFlavors.includes(31));
+function is31Flavors(originalFlavors){
+ if(originalFlavors.length === 31){
+  return true;
+ }else{
+   return false;
+ }
 }
 
 console.log('Task 2:', is31Flavors(originalFlavors));
