@@ -130,7 +130,7 @@ function getFlavorByIndex(originalFlavors, number){
   return originalFlavors[number];
 }
 
-console.log('Task 5:', getFlavorByIndex(originalFlavors, 2));
+console.log('Task 5:', getFlavorByIndex(originalFlavors, 10));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -148,10 +148,12 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-  /*your code here*/
-}
+function removeFlavorByName(array, flavorString){
+  if(flavorString === "Vanilla"){
+    return array.splice(flavorString);
+  }else{
 
+console.log('Task 6:', removeFlavorByName(originalFlavors, "Vanilla"));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
