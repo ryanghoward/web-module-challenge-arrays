@@ -149,15 +149,12 @@ Use the removeFlavorByName function below to do the following:
 */
 
 function removeFlavorByName(array, string){
-  for(let i = 0; i < array.length; i++){
-    if(array[i] == (string)) {
-      return array.splice(string);
-    } else {
-    }
+  const flavor = array.indexOf(string)
+    array.splice(flavor, 1);
+    return array;
   }
-}
 
-console.log('Task 6:', removeFlavorByName(originalFlavors, 'Peach'));
+  console.log('Task 6:', originalFlavors, 'Peach');
  
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
