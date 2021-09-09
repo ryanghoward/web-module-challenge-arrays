@@ -154,7 +154,7 @@ function removeFlavorByName(array, string){
     return array;
   }
 
-  console.log('Task 6:', originalFlavors, 'Peach');
+  console.log('Task 6:', removeFlavorByName(originalFlavors, 'Peach'));
  
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -177,8 +177,14 @@ Use the filterByWord function below to do the following:
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(/*your code here*/){
-  /*your code here*/
+function filterByWord(arr, flavor){
+  let chocolatelist = [];
+    for(let i = 0; i < arr.length; i++) {
+      if(arr[i].includes(flavor)){
+        chocolatelist.push(arr[i]);
+      }
+    }
+    return chocolatelist;
 }
 
 
